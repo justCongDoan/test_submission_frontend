@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .owl-carousel .owl-item img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        .container {
+            text-align: center;
+        }
+        .small-gif {
+            width: 64px;
+            height: 64px;
+            margin-bottom: 20px;
+        }
+        h1, h2 {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        h1 {
+            font-weight: bold;
+            font-size: 38px;
+        }
+        h2 {
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12">
+                <img src="networking.gif" alt="Đây là mô tả" class="small-gif">
+                <h1>Hoạt động tiêu biểu từ cộng đồng giáo dục</h1>
+                <h2>Hình ảnh được chính những giáo viên từ khắp 3 miền ghi lại trong quá trình giảng dạy, dạy học ứng dụng công nghệ SHub Classroom.</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="owl-carousel owl-theme">
+                    <div class="item"><img src="carousel1.png" alt="Image 1"></div>
+                    <div class="item"><img src="carousel2.png" alt="Image 2"></div>
+                    <div class="item"><img src="carousel3.png" alt="Image 3"></div>
+                    <div class="item"><img src="carousel4.png" alt="Image 4"></div>
+                    <div class="item"><img src="carousel5.png" alt="Image 5"></div>
+                    <div class="item"><img src="carousel6.png" alt="Image 6"></div>
+                    <div class="item"><img src="carousel1.png" alt="Image 1"></div>
+                    <div class="item"><img src="carousel2.png" alt="Image 2"></div>
+                    <div class="item"><img src="carousel3.png" alt="Image 3"></div>
+                    <div class="item"><img src="carousel4.png" alt="Image 4"></div>
+                    <div class="item"><img src="carousel5.png" alt="Image 5"></div>
+                    <div class="item"><img src="carousel6.png" alt="Image 6"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel({
+                loop:true,
+                margin:10,
+                nav:true,
+                dots: false,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:3
+                    },
+                    1000:{
+                        items:6
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
